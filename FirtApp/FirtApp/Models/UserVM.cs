@@ -1,9 +1,10 @@
 ﻿using BussinessObject.Model;
+using Repositries.Repostry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Repositries.Repostry;
+
 
 namespace FirtApp.Models
 {
