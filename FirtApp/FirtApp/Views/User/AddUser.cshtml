@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "AddUser";
+    var message = TempData["message"];
 }
 
 <h2>Add User</h2>
@@ -11,5 +12,11 @@
        <input type="text" name="Name" placeholder="Enter name"/>
        <input type="submit" name="Command" value="Add User"/>
    </form>
+    </br>
+
+    @if (message != null)
+    {
+        <h2> @message </h2>
+    }
  </div>
 
