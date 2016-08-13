@@ -1,9 +1,9 @@
 ﻿using BussinessObject.Model;
-using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Repository.Repositories;
 
 namespace FirtApp.Models
 {
@@ -18,8 +18,11 @@ namespace FirtApp.Models
             else
             {
                 UserRepos userRepos = new UserRepos();
-                userRepos.AddUser(user);
-                return "User successfully added";
+
+                if (userRepos.AddUser(user))
+                    return "User successfully added";
+                else
+                    return "User not added";
             }   
         }
     }
