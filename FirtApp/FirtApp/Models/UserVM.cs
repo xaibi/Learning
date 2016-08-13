@@ -18,7 +18,6 @@ namespace FirtApp.Models
             else
             {
                 UserRepos userRepos = new UserRepos();
-
                 if (userRepos.AddUser(user))
                     return "User successfully added";
                 else
