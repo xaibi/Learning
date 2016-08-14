@@ -9,5 +9,6 @@ namespace BussinessObject.Model
     public class User
     {
         public String  Name { get; set; }
+
     }
 }
